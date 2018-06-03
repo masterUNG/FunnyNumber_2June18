@@ -120,19 +120,68 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btL-sQ-q2m">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="byY-9p-HCg"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="u86-QI-rSe">
+                                        <connections>
+                                            <action selector="decButton:" destination="NeK-kr-Kjs" id="BU3-dp-N79"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2co-5d-eX8"/>
+                                    <barButtonItem title="Start" id="b7i-S3-BeT">
+                                        <connections>
+                                            <action selector="startButton:" destination="NeK-kr-Kjs" id="bau-fi-Lzc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Fep-Sf-goc"/>
+                                    <barButtonItem systemItem="fastForward" id="EJj-qw-efw">
+                                        <connections>
+                                            <action selector="incButton:" destination="NeK-kr-Kjs" id="obC-ux-PS0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ramdan-authentic-490590-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lEu-UD-uYz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijr-xs-mlH">
+                                <rect key="frame" x="0.0" y="303" width="375" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="rYb-kh-Zms" firstAttribute="trailing" secondItem="vYe-kO-L86" secondAttribute="trailing" id="7lh-dj-e3U"/>
-                            <constraint firstItem="rYb-kh-Zms" firstAttribute="leading" secondItem="vYe-kO-L86" secondAttribute="leading" id="Tsc-Nl-Scw"/>
-                            <constraint firstItem="rYb-kh-Zms" firstAttribute="top" secondItem="vYe-kO-L86" secondAttribute="top" id="q3D-si-n42"/>
+                            <constraint firstItem="btL-sQ-q2m" firstAttribute="top" secondItem="lEu-UD-uYz" secondAttribute="bottom" id="4h4-Ft-nfm"/>
+                            <constraint firstItem="Ijr-xs-mlH" firstAttribute="centerX" secondItem="psd-3K-8eX" secondAttribute="centerX" id="HX5-7t-0uc"/>
+                            <constraint firstItem="rYb-kh-Zms" firstAttribute="leading" secondItem="vYe-kO-L86" secondAttribute="leading" id="Lb2-lH-0GP"/>
+                            <constraint firstItem="lEu-UD-uYz" firstAttribute="top" secondItem="rYb-kh-Zms" secondAttribute="bottom" id="PDS-62-72i"/>
+                            <constraint firstItem="btL-sQ-q2m" firstAttribute="trailing" secondItem="vYe-kO-L86" secondAttribute="trailing" id="RUx-e9-Vh7"/>
+                            <constraint firstItem="btL-sQ-q2m" firstAttribute="bottom" secondItem="vYe-kO-L86" secondAttribute="bottom" id="RZl-oQ-Qah"/>
+                            <constraint firstItem="lEu-UD-uYz" firstAttribute="leading" secondItem="vYe-kO-L86" secondAttribute="leading" id="WIq-nz-vFD"/>
+                            <constraint firstItem="btL-sQ-q2m" firstAttribute="leading" secondItem="vYe-kO-L86" secondAttribute="leading" id="bTA-ol-f78"/>
+                            <constraint firstItem="Ijr-xs-mlH" firstAttribute="leading" secondItem="vYe-kO-L86" secondAttribute="leading" id="g1f-Gr-eIC"/>
+                            <constraint firstItem="Ijr-xs-mlH" firstAttribute="centerY" secondItem="psd-3K-8eX" secondAttribute="centerY" id="iKa-Vw-zt0"/>
+                            <constraint firstItem="vYe-kO-L86" firstAttribute="trailing" secondItem="Ijr-xs-mlH" secondAttribute="trailing" id="kXU-pA-aWd"/>
+                            <constraint firstItem="lEu-UD-uYz" firstAttribute="top" secondItem="vYe-kO-L86" secondAttribute="top" constant="44" id="mdy-Zi-LFf"/>
+                            <constraint firstItem="rYb-kh-Zms" firstAttribute="top" secondItem="vYe-kO-L86" secondAttribute="top" id="qhd-tD-BEm"/>
+                            <constraint firstItem="rYb-kh-Zms" firstAttribute="trailing" secondItem="vYe-kO-L86" secondAttribute="trailing" id="rkR-SC-Rmc"/>
+                            <constraint firstItem="lEu-UD-uYz" firstAttribute="trailing" secondItem="vYe-kO-L86" secondAttribute="trailing" id="uyL-eQ-7Jt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vYe-kO-L86"/>
                     </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="Ijr-xs-mlH" id="i3n-DN-06r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cbL-ru-E4D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1188" y="63"/>
+            <point key="canvasLocation" x="1188" y="62.518740629685162"/>
         </scene>
     </scenes>
     <resources>

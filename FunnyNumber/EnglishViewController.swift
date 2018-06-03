@@ -9,6 +9,65 @@
 import UIKit
 
 class EnglishViewController: UIViewController {
+    
+    var myClass = MyClass()
+    
+    
+    
+    @IBOutlet weak var numberLabel: UILabel!
+    
+    @IBAction func decButton(_ sender: Any) {
+        
+        var currentIndexInt: Int = myClass.myNumberInt
+        print("CurrentIndex ==> \(currentIndexInt)")
+        
+        if currentIndexInt <= 0 {
+            currentIndexInt = myClass.showNumberStrings.count
+        }
+        
+        let newIndexInt: Int = myClass.decreseNumber(numberInt: currentIndexInt)
+        myClass.myNumberInt = newIndexInt
+        print("newIndex ==> \(myClass.myNumberInt)")
+        
+        numberLabel.text = myClass.sentNumber()
+        
+        
+    }
+    
+    
+    
+    @IBAction func startButton(_ sender: Any) {
+        
+        myClass.myNumberInt = 0
+        numberLabel.text = myClass.sentNumber()
+        
+        
+    }
+    
+    
+    
+    @IBAction func incButton(_ sender: Any) {
+        
+        var currentIndexInt: Int = myClass.myNumberInt
+        
+        currentIndexInt = currentIndexInt + 1
+        
+        if currentIndexInt >= myClass.showNumberStrings.count {
+            currentIndexInt = 0
+        }
+        
+        
+        
+        myClass.myNumberInt = currentIndexInt
+        
+        numberLabel.text = myClass.sentNumber()
+        
+        
+        
+    }
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

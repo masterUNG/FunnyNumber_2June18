@@ -10,6 +10,16 @@ import Foundation
 
 class MyClass {
     
+//    Explicit
+    var myNumberInt: Int = 0
+    var showNumberStrings = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
+    
+    
+    func sentNumber() -> String {
+        return showNumberStrings[myNumberInt]
+    }
+    
+    
     
     func decreseNumber(numberInt: Int) -> Int {
         
