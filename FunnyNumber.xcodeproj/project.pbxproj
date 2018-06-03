@@ -12,6 +12,9 @@
 		C4F9EBBB20C3A4D100C6D6A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F9EBB920C3A4D100C6D6A4 /* Main.storyboard */; };
 		C4F9EBBD20C3A4D300C6D6A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4F9EBBC20C3A4D300C6D6A4 /* Assets.xcassets */; };
 		C4F9EBC020C3A4D300C6D6A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4F9EBBE20C3A4D300C6D6A4 /* LaunchScreen.storyboard */; };
+		C4F9EBC820C3A71C00C6D6A4 /* EnglishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F9EBC720C3A71C00C6D6A4 /* EnglishViewController.swift */; };
+		C4F9EBCA20C3A9BA00C6D6A4 /* baseline_keyboard_arrow_left_black_48pt_1x.png in Resources */ = {isa = PBXBuildFile; fileRef = C4F9EBC920C3A9BA00C6D6A4 /* baseline_keyboard_arrow_left_black_48pt_1x.png */; };
+		C4F9EBCC20C3BDA000C6D6A4 /* ramdan-authentic-490590-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4F9EBCB20C3BDA000C6D6A4 /* ramdan-authentic-490590-unsplash.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		C4F9EBBC20C3A4D300C6D6A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4F9EBBF20C3A4D300C6D6A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4F9EBC120C3A4D300C6D6A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4F9EBC720C3A71C00C6D6A4 /* EnglishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishViewController.swift; sourceTree = "<group>"; };
+		C4F9EBC920C3A9BA00C6D6A4 /* baseline_keyboard_arrow_left_black_48pt_1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baseline_keyboard_arrow_left_black_48pt_1x.png; sourceTree = "<group>"; };
+		C4F9EBCB20C3BDA000C6D6A4 /* ramdan-authentic-490590-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ramdan-authentic-490590-unsplash.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,10 @@
 			children = (
 				C4F9EBB520C3A4D100C6D6A4 /* AppDelegate.swift */,
 				C4F9EBB720C3A4D100C6D6A4 /* ViewController.swift */,
+				C4F9EBC720C3A71C00C6D6A4 /* EnglishViewController.swift */,
 				C4F9EBB920C3A4D100C6D6A4 /* Main.storyboard */,
+				C4F9EBC920C3A9BA00C6D6A4 /* baseline_keyboard_arrow_left_black_48pt_1x.png */,
+				C4F9EBCB20C3BDA000C6D6A4 /* ramdan-authentic-490590-unsplash.jpg */,
 				C4F9EBBC20C3A4D300C6D6A4 /* Assets.xcassets */,
 				C4F9EBBE20C3A4D300C6D6A4 /* LaunchScreen.storyboard */,
 				C4F9EBC120C3A4D300C6D6A4 /* Info.plist */,
@@ -125,6 +134,8 @@
 				C4F9EBC020C3A4D300C6D6A4 /* LaunchScreen.storyboard in Resources */,
 				C4F9EBBD20C3A4D300C6D6A4 /* Assets.xcassets in Resources */,
 				C4F9EBBB20C3A4D100C6D6A4 /* Main.storyboard in Resources */,
+				C4F9EBCC20C3BDA000C6D6A4 /* ramdan-authentic-490590-unsplash.jpg in Resources */,
+				C4F9EBCA20C3A9BA00C6D6A4 /* baseline_keyboard_arrow_left_black_48pt_1x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F9EBC820C3A71C00C6D6A4 /* EnglishViewController.swift in Sources */,
 				C4F9EBB820C3A4D100C6D6A4 /* ViewController.swift in Sources */,
 				C4F9EBB620C3A4D100C6D6A4 /* AppDelegate.swift in Sources */,
 			);
