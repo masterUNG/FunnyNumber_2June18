@@ -36,11 +36,23 @@
                                     <constraint firstAttribute="height" constant="44" id="HQN-5E-ZL5"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem systemItem="rewind" id="Vbt-Xp-20v"/>
+                                    <barButtonItem systemItem="rewind" id="Vbt-Xp-20v">
+                                        <connections>
+                                            <action selector="decButton:" destination="BYZ-38-t0r" id="jHe-D2-sLB"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="tAu-By-Mdv"/>
-                                    <barButtonItem title="Start" id="P9C-uo-nul"/>
+                                    <barButtonItem title="Start" id="P9C-uo-nul">
+                                        <connections>
+                                            <action selector="startButton:" destination="BYZ-38-t0r" id="aLB-aa-LYn"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="tXY-HW-WPd"/>
-                                    <barButtonItem systemItem="fastForward" id="Zqc-ui-ecc"/>
+                                    <barButtonItem systemItem="fastForward" id="Zqc-ui-ecc">
+                                        <connections>
+                                            <action selector="incButton:" destination="BYZ-38-t0r" id="HuM-2J-Nad"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ramdan-authentic-490590-unsplash.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IQS-aq-wul">
@@ -73,6 +85,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="numberLabel" destination="MTq-rC-dGL" id="VvT-Ua-lEz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IwX-1E-WVR">
