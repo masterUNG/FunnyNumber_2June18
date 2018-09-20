@@ -15,6 +15,7 @@ class MyClass {
     var showNumberStrings = ["One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"]
     
     
+    
     func sentNumber() -> String {
         return showNumberStrings[myNumberInt]
     }
